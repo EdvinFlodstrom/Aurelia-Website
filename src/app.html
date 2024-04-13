@@ -1,11 +1,12 @@
 <template>
 
   <require from="./style.css"></require>
+  <require from="./clickButton"></require>
 
   <h2 class="welcome-message">${welcomeMessage}</h2>
   <p class="explanation-message">${initialExplanationMessage}</p>
   <p class="button-message">${buttonExplanationMessage}</p>
 
-  <button class="enabled-button">Click me!</button>
+  <compose view="./clickButton.html" view-model="./clickButton"></compose>
 
 </template>
