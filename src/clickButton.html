@@ -1,3 +1,16 @@
 <template>
-    <button click.trigger="LogToConsole()" class="enabled-button">Click me!</button>
+    <button 
+        click.trigger="incrementAmountOfClicks()" 
+        class.bind="isClickEnabled ? 'enabled-button' : 'disabled-button'" 
+        disabled.bind="!isClickEnabled">
+        Click me!
+    </button>
+    <p>Remaining time: ${secondsRemaining}</p>
+    <button
+        click.trigger="startCountdownTimer()"
+        class.bind="isCountdownEnabled ? 'enabled-button' : 'disabled-button'"
+        disabled.bind="!isCountdownEnabled">
+        Click me to start countdown!
+    </button>
+    <p>Your CPS was: ${cps}</p>
 </template>

@@ -11,31 +11,29 @@
     color:blueviolet;
 }
 
-/* Enabled button style */
 .enabled-button {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50;
     border: none;
-    color: #ffffff; /* White text */
+    color: #ffffff;
     padding: 15px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
-    border-radius: 10px; /* Rounded corners */
+    border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth color transition */
+    transition: background-color 0.3s ease;
 }
 
-/* Disabled button style */
 .disabled-button {
-    background-color: #f44336; /* Red */
+    background-color: #f44336;
     border: none;
-    color: #cccccc; /* Light gray text */
+    color: #cccccc;
     padding: 15px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 18px;
-    border-radius: 10px; /* Rounded corners */
-    cursor: not-allowed; /* Cursor changes to not-allowed */
+    border-radius: 10px;
+    cursor: not-allowed;
 }
